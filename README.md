@@ -14,6 +14,8 @@ After exporting all frames there is some `image magick` work to process the file
 3. process channels to recolour and dither as required
 4. recombine processed channels into new sprite sheet image
 
+You can read about that on my blog: https://blog.gingerbeardman.com/2021/06/05/channelling-rgb-into-1bit/
+
 ## Notes
 
 This workflow was made for my game [Daily Driver](https://gingerbeardman.itch.io/daily-driver) so a lot of the values are set to produce tiny, 1-bit, dithered sprites across several different poses, resulting in sprite sheet with 990 frames each for car and shadow totalling 1980 frames per model.
