@@ -6,10 +6,6 @@ The model is rendered in different poses such as wheels turned, body tilted, car
 
 The process is clever enough to only render models that have changed since last build, those whose modified date is newer than the existing generated images for that model.
 
-### Optimisations
-
-As many things are done in parallel as possible. It would be great if OpenSCAD could produce a sprite sheet which would remove the overhead of having to render many frames, write them to disk, then have another process read them back in and stitch them together.
-
 ## Post Processing
 
 After exporting all frames there is some `image magick` work to process the files as follows:
@@ -22,10 +18,35 @@ After exporting all frames there is some `image magick` work to process the file
 
 It was made for my game [Daily Driver](https://gingerbeardman.itch.io/daily-driver) so a lot of the values are set to produce tiny, 1-bit, dithered sprites across several different poses, resulting in sprite sheet with 990 frames each for car and shadow totalling 1980 frames per model.
 
+## Optimisations
+
+As many things are done in parallel as possible using shell script backgrounding, but there is still room for improvement. 
+
+It would be great if OpenSCAD could produce a sprite sheet which would remove the overhead of having to render many frames, write them to disk, then have another process read them back in and stitch them together.
+
+## Benchmarks
+
+A full build of 36 cars is as follows:
+
+- 3GHz 6-core Intel Mac mini 32GB
+  - 100% CPU for ~26 minutes
+- M1 Pro 10-core MacBook Pro 16GB
+  - 60% CPU for ~9 mins
+  - about 3x speedup
+  - approx 16 seconds per car
+
+That's parallel 3D rendering, PNG writing & compositing & processing, and copying of ~140K files (~0.5GB)!
+
+----
+
 ## Example Model
+
+Not to scale! Sizes of features are exagerated to allow for them to appear correct when rendered at a very small size.
 
 ![](_car.png)
 
 ## Example Output
+
+990 frames each for car and shadow, total of 1980 frames per sprite sheet. These take up about ~400KB of RAM on Playdate.
 
 ![](car-table-38-38.png)
