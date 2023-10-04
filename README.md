@@ -20,7 +20,7 @@ After exporting all frames there is some `image magick` work to process the file
 
 ## Notes
 
-It was made for my game [Daily Driver](https://gingerbeardman.itch.io/daily-driver) so a lot of the values are set to produce tiny, 1-bit, dithered sprites across several different poses, resulting in sprite sheet with 990 frames each for car and shadow totalling 1980 frames per car.
+It was made for my game [Daily Driver](https://gingerbeardman.itch.io/daily-driver) so a lot of the values are set to produce tiny, 1-bit, dithered sprites across several different poses, resulting in sprite sheet with 990 frames each for car and shadow totalling 1980 frames per model.
 
 ## Example Model
 
