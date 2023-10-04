@@ -1,6 +1,6 @@
 # OpenSCAD to Sprite Sheet
 
-This takes a `OpenSCAD` model and exports `$ROTS` rotations as individual frames. 
+This takes a [OpenSCAD](https://github.com/openscad/openscad) model and exports `$ROTS` rotations as individual frames. 
 
 The model is rendered in different poses such as wheels turned, body tilted, car or shadow. These are controlled by shell script variables that are either passed to the model in the call to OpenSCAD.
 
