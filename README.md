@@ -31,7 +31,7 @@ A full build of 36 cars is as follows:
 - 3GHz 6-core Intel Mac mini 32GB
   - 100% CPU for ~26 minutes
 - M1 Pro 10-core MacBook Pro 16GB
-  - 60% CPU for ~9 mins
+  - 70% CPU for ~9 mins
   - about 3x speedup
   - approx 16 seconds per car
 
