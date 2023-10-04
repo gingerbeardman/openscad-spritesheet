@@ -35,7 +35,7 @@ A full build of 36 cars is as follows:
   - about 3x speedup
   - approx 16 seconds per car
 
-That's parallel 3D rendering, PNG writing & compositing & processing, and copying of ~140K files (~0.5GB)!
+That's parallel 3D rendering, PNG writing & compositing & processing, and copying of ~140K files (which takes up ~0.5GB of disk space).
 
 ----
 
@@ -47,6 +47,6 @@ Not to scale! Sizes of features are exagerated to allow for them to appear corre
 
 ## Example Output
 
-990 frames each for car and shadow, total of 1980 frames per sprite sheet. These take up about ~400KB of RAM on Playdate.
+990 frames each for car and shadow, total of 1980 frames per sprite sheet. Each sprite sheet takes up about ~400KB of RAM on Playdate, and only one is loaded at a time.
 
 ![](car-table-38-38.png)
