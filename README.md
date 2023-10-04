@@ -4,7 +4,7 @@ This takes a [OpenSCAD](https://github.com/openscad/openscad) model and exports 
 
 The model is rendered in different poses such as wheels turned, body tilted, car or shadow. These are controlled by shell script variables that are either passed to the model in the call to OpenSCAD.
 
-The process is clever enough to only render models that have changed since last build, those whose modified date is newer than the existing generated images for that model.
+The process is clever enough to only render models that have changed since last build, those whose modified date is newer than the existing generated sprite sheet for that model.
 
 ## Post Processing
 
